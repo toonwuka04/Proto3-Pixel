@@ -10,4 +10,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 	
+func _on_next_scene_body_entered(body: Node2D) -> void:
+	#pass # Replace with function body.
+	if body is Player:
+		get_tree().change_scene_to_file("res://scenes/level2.tscn")
 	
